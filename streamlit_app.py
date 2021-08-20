@@ -23,7 +23,7 @@ with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
     
-    def_h=200,
+    def_h=200
     cur_h=st.number_input('Height', min_value=0.0, max_value=None, value=def_h, step=1)
     
     Point = namedtuple('Point', 'x y')
