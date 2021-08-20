@@ -30,7 +30,7 @@ with st.echo(code_location='below'):
     data = []
 
     points_per_turn = total_points / num_turns
-    cur_h=points
+    cur_h=points_per_turn
     for curr_point_num in range(total_points):
         curr_turn, i = divmod(curr_point_num, points_per_turn)
         angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
