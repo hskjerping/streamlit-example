@@ -22,6 +22,7 @@ with header:
 url = 'https://github.com/hskjerping/streamlit-example/blob/2069dd1903af469de5ae92184d5758266011f9f8/camspecs.csv'
 s = requests.get(url).content
 df = pd.read_csv(io.StringIO(s.decode('utf-8')))
+print(df.to_string()) 
 
 with user_input:
     st.sidebar.header('User Selection') 
