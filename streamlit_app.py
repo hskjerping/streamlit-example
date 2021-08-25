@@ -7,10 +7,10 @@ import openpyxl
 import streamlit as st 
 
 
-header = st.beta_container()
-user_input = st.beta_container()
-output_graphs = st.beta_container()
-author_credits = st.beta_container()
+header = st.container()
+user_input = st.container()
+output_graphs = st.container()
+author_credits = st.container()
 
 with header:
     st.title("Testefjes")
