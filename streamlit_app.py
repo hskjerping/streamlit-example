@@ -21,7 +21,7 @@ with header:
 # Fetch Dataset from the New York Times Github Repository
 url = 'https://github.com/hskjerping/streamlit-example/blob/2069dd1903af469de5ae92184d5758266011f9f8/camspecs.csv'
 s = requests.get(url).content
-df = pd.read_csv(io.StringIO(s.decode('utf-8')))
+df = pd.read_csv('camspecs.csv')
 print(df.to_string()) 
 
 with user_input:
