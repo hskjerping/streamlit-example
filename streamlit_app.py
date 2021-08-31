@@ -62,6 +62,6 @@ with user_input:
     df_county['framerate'] = df_county.loc[:,'framerate']
 
     #Create a 
-    st.print(np.tan(df_county.loc[df.cam == cam,'framerate']))
+    st.write(np.tan(df_county.loc[df.cam == cam,'framerate']))
 
 
