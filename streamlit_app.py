@@ -24,6 +24,8 @@ s = requests.get(url).content
 df = pd.read_csv('camspecs.csv')
 print(df.to_string()) 
 
+
+
 with user_input:
     st.sidebar.header('User Selection') 
 
@@ -60,5 +62,6 @@ with user_input:
     df_county['framerate'] = df_county.loc[:,'framerate']
 
     #Create a 
+    st.print(np.tan(df_county.loc[:,'framerate']))
 
 
